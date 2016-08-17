@@ -1,0 +1,15 @@
+{{#foreach posts}}
+
+<article class="post">
+  <h3 class="post-date" datetime="{{date format="MMMM D DD YYYY" }}">{{date format= "MMMM DD, YYYY"}}</h3>
+  <h1 class="post-title"><a href="{{url}}">{{title}}</a></h1>
+  {{#if tags}}
+  <span class="taglist">
+      {{#foreach tags}}
+        <a href="{{url}}" title="{{name}}" class="tag">{{name}}</a>
+      {{/foreach}}
+    {{/if}}
+  </span>
+</article>
+
+{{/foreach}}
