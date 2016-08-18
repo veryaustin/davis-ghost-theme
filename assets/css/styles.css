@@ -611,9 +611,8 @@ header #logo {
   margin: 0;
   margin-top: 0.313em;
   float: left;
-}
-header #logo span {
   font-weight: 700;
+  color: #4A4A4A;
 }
 header nav {
   text-transform: uppercase;
