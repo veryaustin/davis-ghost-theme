@@ -1,4 +1,4 @@
-"Min": A simple theme for the ghost blogging platform
+"Min": A simple theme for Ghost blogging platform
 -----------------------------
 
 Documentation coming soon!
