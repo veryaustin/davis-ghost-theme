@@ -23,7 +23,7 @@ body {
   color: $dark_grey;
 }
 
-p, hr, h4, h5, h6 {
+p, hr, h2, h3, h4, h5, h6 {
   margin: .9em 0;
 }
 
@@ -39,12 +39,26 @@ h1 {
   letter-spacing: -0.035em;
 }
 
+h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.035em;
+}
+
 h3 {
+  font-size: 1.375em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.035em;
+}
+
+h4 {
   font-family: 'Raleway', sans-serif;
   font-size: 1.125em;
 }
 
-h4 {
+h5 {
   font-family: 'Raleway', sans-serif;
   font-size: 0.938em;
   text-transform: uppercase;
