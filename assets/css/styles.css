@@ -497,7 +497,11 @@ body {
   color: #4A4A4A;
 }
 
-p, hr, h2, h3, h4, h5, h6 {
+p {
+  margin: .5em 0;
+}
+
+hr, h2, h4, h5, h6 {
   margin: .9em 0;
 }
 
@@ -525,6 +529,7 @@ h3 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -0.035em;
+  margin: .6em 0;
 }
 
 h4 {
@@ -554,6 +559,7 @@ blockquote {
   font-size: 1.3em;
   border-left: 0.4em solid #C4C4C4;
   padding-left: 1.2em;
+  margin: 1.5em 0;
 }
 
 hr {
@@ -674,24 +680,10 @@ footer #legal {
 
 .pagination {
   margin-top: 10em;
-}
-.pagination ul {
-  padding: 0;
   text-align: center;
 }
-.pagination ul li {
-  display: inline;
-  margin: 0.063em;
-}
-.pagination ul li a {
-  padding: 0.4em 0.7em;
-  color: #4A4A4A;
-  text-decoration: none;
-}
-.pagination ul li a:active {
-  background-color: #D0021B;
-  border-radius: 0.250em;
-  color: #FFFFFF;
+.pagination a {
+  font-weight: 700;
 }
 
 .post-detail-header {
