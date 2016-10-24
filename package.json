@@ -4,6 +4,6 @@
   "description": "Davis Ghost Theme",
   "main": "index.js",
   "author": "Austin Lauritsen",
-  "license": "ISC",
+  "license": "MIT",
   "homepage": "https://github.com/veryaustin/davis-ghost-theme"
 }
