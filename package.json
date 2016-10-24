@@ -1,9 +1,9 @@
 {
-  "name": "Min",
+  "name": "Davis",
   "version": "1.0.0",
-  "description": "Min Ghost Theme",
+  "description": "Davis Ghost Theme",
   "main": "index.js",
   "author": "Austin Lauritsen",
   "license": "ISC",
-  "homepage": "https://github.com/veryaustin/website-2016#readme"
+  "homepage": "https://github.com/veryaustin/davis-ghost-theme"
 }
