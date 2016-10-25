@@ -10,200 +10,181 @@ $light_grey: #C4C4C4;
 $white: #FFFFFF;
 $highlight: #D0021B;
 
-
 // ----- Global Styles ----- //
 
 * {
-  padding: 0;
-  margin: 0;
+  box-sizing: border-box;
 }
 
 html, body {
-  font-size: 1em;
-  font-weight: 300;
   font-family: 'Open-Sans', sans-serif;
-  line-height: 1.65em;
-  background: $white;
   color: $dark_grey;
 }
 
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
 
-h1, h2, h3 {
+.clearfix:after {
+  clear: both;
+}
+
+.wrapper {
+  width: 1440px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -0.035em;
 }
 
-h2, h3, h4, h5 {
-  margin: 1.4em 0 .4em 0;
-}
-
-h1 {
-  font-size: 2em;
-  line-height: 1em;
-}
-
-h2 {
-  font-size: 1.5em;
-}
-
-h3 {
-  font-size: 1.375em;
-}
-
-h4 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.125em;
-}
-
-h5 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 0.938em;
-  text-transform: uppercase;
-}
-
 p {
-  font-size: 1.1em;
-  margin: .2em 0 1.2em 0;
-  line-height: 1.3em;
+  line-height: 1.6em;
 }
 
-a {
-  color: $highlight;
-  text-decoration:none;
-  &:visited {
-    color: $highlight;
-  }
-}
+// ----- Navigation ----- //
 
-ul, ol {
-  margin-left: 3em;
-}
-
-li {
-  font-size: 1.1em;
-  line-height: 1.3em;
-}
-
-blockquote {
-  font-size: 1.3em;
-  border-left: 0.4em solid $light_grey;
-  padding-left: 1.2em;
-  margin: 1.5em 0;
-}
-
-hr {
-  border-top: 1px solid $light_grey;
-}
-
-strong {
-  font-weight: 700;
-}
-
-pre {
-  display: block;
-  font-family: monospace;
-  white-space: pre;
-  margin: 1em 0
-}
-
-input, textarea {
-  font-size: 1em;
-  padding: 0.3em;
-  border: 1px solid $light_grey;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  margin: 2em auto;
-}
-
-
-.wrapper {
-  width: 700px;
-  max-width: 90%;
-  margin: 0 auto;
-};
-
-.content {
-  position: relative;
-  min-height: 100%;
-  margin: 2.813em 0 -2.063em 0;
-}
-
-
-// ----- Footer Clearfix ----- //
-
-.content:after {
-  content: "";
-  display: block;
-}
-
-footer, .content:after {
-  height: 2.063em;
-}
-
-
-// ----- Header Styles ----- //
-
-header {
-  padding: 1.25em 0 2.5em 0;
+#top_header {
+  padding: .3em 0;
   border-bottom: 1px solid $light_grey;
-  #logo {
-    font-weight: 400;
-    font-size: 1em;
-    text-transform: uppercase;
-    letter-spacing: -0.035em;
-    margin: 0;
+  .logo {
     float: left;
+    text-transform: uppercase;
+    font-size: 1.15em;
     font-weight: 700;
+    letter-spacing: -0.035em;
     color: $dark_grey;
   }
-  nav {
-    text-transform: uppercase;
-    font-size: 0.75em;
+  #main_nav {
     float: right;
-    margin-top: 0.5em;
+    font-size: 0.75em;
+    padding-top: 1.3em;
+    text-transform: uppercase;
     a {
-      margin-left: 2em;
-      text-decoration: none;
       color: $medium_grey;
+      text-decoration: none;
+      margin-left: 1em;
       &:hover {
-        color: $highlight;
-      }
-      &:visited {
-        color: $dark_grey;
+        color: darken($highlight, 25%);
+        text-decoration: underline;
       }
       &:active {
         text-decoration: underline;
-        color: $highlight;
       }
     }
   }
 }
 
+// ----- Article List ----- //
 
-// ----- Footer Styles ----- //
-
-footer {
-  border-top: 0.063em solid $light_grey;
-  background-color: $white;
-  margin-top: 5em;
-  padding: 2.063em;
-  font-size: .625em;
-  color: $light_grey;
-  span {
-    padding-top: 0.313em;
+.articles {
+  width: 700px;
+  max-width: 90%;
+  margin: 3.5em auto;
+  text-align: center;
+  min-height: 100%;
+  .article-date {
+    font-family: 'Raleway', sans-serif;
+    text-transform: none;
+    font-size: 1.125em;
+    margin: .3em 0;
   }
-  #copy {
-    float:left;
-  }
-  #legal {
-    float: right;
+  .article-title {
+    margin: .3em 0;
+    a {
+        text-decoration: none;
+        color: $dark_grey;
+    }
   }
 }
 
+// ----- Article Detail Banner ----- //
+
+#banner {
+  text-align: center;
+  margin: 100px 0;
+  h1 {
+    font-size: 3.250em;
+    margin-top: 0.133em;
+  }
+  h3 {
+    margin: 0px;
+  }
+  h4 {
+    margin: 12px 0;
+    font-family: 'Raleway', sans-serif;
+    text-transform: none;
+    font-size: 1.125em;
+  }
+  #banner_content_wrapper {
+    width: 1440px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+// ----- Article Detail Content ----- //
+
+#article_content {
+  width: 700px;
+  max-width: 90%;
+  margin: 0 auto;
+  a {
+    color: $highlight;
+    text-decoration: none;
+    &:hover {
+      color: darken($highlight, 25%);
+    }
+    &:visited {
+      color: $highlight;
+    }
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    margin: 2em auto;
+  }
+  ul, ol {
+    margin-left: 1em;
+  }
+
+  li {
+    font-size: 1.1em;
+    line-height: 1.3em;
+  }
+
+  blockquote {
+    font-size: 1.3em;
+    border-left: 0.4em solid $light_grey;
+    padding-left: 1.2em;
+    margin: 1.5em 0;
+  }
+
+  hr {
+    border-top: 1px solid $light_grey;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0
+  }
+
+  input, textarea {
+    font-size: 1em;
+    padding: 0.3em;
+    border: 1px solid $light_grey;
+  }
+}
 
 // ----- Post Tag Styles ----- //
 
@@ -219,27 +200,6 @@ footer {
   }
 }
 
-
-// ----- Posts Overview Styles ----- //
-
-.post {
-  text-align: center;
-  padding: 1.4065em 0;
-  .post-date {
-    margin: 0;
-  }
-  .post-title {
-    margin: 0.313em 0;
-    a {
-      color: $dark_grey;
-      &:hover {
-        color: $medium_grey;
-      }
-    }
-  }
-}
-
-
 // ----- Pagination Styles ----- //
 
 .pagination {
@@ -247,29 +207,35 @@ footer {
   text-align: center;
   a {
     font-weight: 700;
+    color: $highlight;
+    text-decoration: none;
+    &:hover {
+      color: darken($highlight, 25%);
+    }
+    &:visited {
+      color: $highlight;
+    }
   }
 }
 
 
-// ----- Post Detail Styles ----- //
+// ----- Footer Styles ----- //
 
-.post-detail-header {
-  text-align: center;
-  margin: 100px 0;
-  h1 {
-    font-size: 3.250em;
-    margin-top: 0.133em;
+footer {
+  height: 60px;
+  border-top: 0.063em solid $light_grey;
+  background-color: $white;
+  margin-top: 5em;
+  padding: 2.063em;
+  font-size: .625em;
+  color: $light_grey;
+  span {
+    padding-top: 0.313em;
   }
-  h3 {
-    margin: 0px;
+  #copy {
+    float:left;
   }
-  h4 {
-    margin: 12px 0;
-  }
-}
-
-.post-detail-content {
-  h1 {
-    margin: 32px 0 0 0;
+  #legal {
+    float: right;
   }
 }
