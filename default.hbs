@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="{ meta_description }">
-    <meta name="keywords" content="Ruby On Rails, HTML ,CSS, App Development, Web Development, JavaScript, Amazon Web Services">
+    <meta name="description" content="{{ meta_description }}">
     <title>{{ meta_title }}</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:100" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
@@ -16,23 +15,23 @@
     {{ ghost_head }}
   </head>
   <body>
-    <header>
+    <header id="top_header" class="clearfix">
       <div class="wrapper">
-        <a href="{{@blog.url}}" id="logo"><span>{{@blog.title}}</span></a>
+        <a href="{{@blog.url}}"><h1 class="logo">{{@blog.title}}</h1></a>
   			{{ navigation }}
       </div>
     </header>
-    <section class="content">
-      <div class="wrapper">
-        {{{ body }}}
-      </div>
-    </section>
-
+    {{{ body }}}
     <footer>
       <span id="legal">&copy; {{@blog.title}} {{ date format="YYYY" }}</span>
     </footer>
+
+
     {{ ghost_foot }}
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+    <script type="text/javascript" src="{{asset "js/main.js"}}"></script>
+    <script> hljs.initHighlightingOnLoad();</script>
+
   </body>
 </html>

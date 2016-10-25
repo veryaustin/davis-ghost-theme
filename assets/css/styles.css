@@ -436,137 +436,154 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   color: #75715e; }
 
 * {
-  padding: 0;
-  margin: 0; }
+  box-sizing: border-box; }
 
 html, body {
-  font-size: 1em;
-  font-weight: 300;
   font-family: 'Open-Sans', sans-serif;
-  line-height: 1.65em;
-  background: #FFFFFF;
   color: #4A4A4A; }
 
-h1, h2, h3 {
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.wrapper {
+  width: 1440px;
+  max-width: 90%;
+  margin: 0 auto; }
+
+h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -0.035em; }
 
-h2, h3, h4, h5 {
-  margin: 1.4em 0 .4em 0; }
-
-h1 {
-  font-size: 2em;
-  line-height: 1em; }
-
-h2 {
-  font-size: 1.5em; }
-
-h3 {
-  font-size: 1.375em; }
-
-h4 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.125em; }
-
-h5 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 0.938em;
-  text-transform: uppercase; }
-
 p {
-  font-size: 1.1em;
-  margin: .2em 0 1.2em 0;
-  line-height: 1.3em; }
+  line-height: 1.6em; }
 
-a {
-  color: #D0021B;
-  text-decoration: none; }
-  a:visited {
-    color: #D0021B; }
+#top_header {
+  padding: .3em 0;
+  border-bottom: 1px solid #C4C4C4; }
+  #top_header .logo {
+    float: left;
+    text-transform: uppercase;
+    font-size: 1.15em;
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    color: #4A4A4A; }
+  #top_header #main_nav {
+    float: right;
+    font-size: 0.75em;
+    padding-top: 1.3em;
+    text-transform: uppercase; }
+    #top_header #main_nav a {
+      color: #9B9B9B;
+      text-decoration: none;
+      margin-left: 1em; }
+      #top_header #main_nav a:hover {
+        color: #52010b;
+        text-decoration: underline; }
+      #top_header #main_nav a:active {
+        text-decoration: underline; }
 
-ul, ol {
-  margin-left: 3em; }
+.articles {
+  width: 700px;
+  max-width: 90%;
+  margin: 3.5em auto;
+  text-align: center;
+  min-height: 100%; }
+  .articles .article-date {
+    font-family: 'Raleway', sans-serif;
+    text-transform: none;
+    font-size: 1.125em;
+    margin: .3em 0; }
+  .articles .article-title {
+    margin: .3em 0; }
+    .articles .article-title a {
+      text-decoration: none;
+      color: #4A4A4A; }
 
-li {
-  font-size: 1.1em;
-  line-height: 1.3em; }
+#banner {
+  text-align: center;
+  margin: 100px 0; }
+  #banner h1 {
+    font-size: 3.250em;
+    margin-top: 0.133em; }
+  #banner h3 {
+    margin: 0px; }
+  #banner h4 {
+    margin: 12px 0;
+    font-family: 'Raleway', sans-serif;
+    text-transform: none;
+    font-size: 1.125em; }
+  #banner #banner_content_wrapper {
+    width: 1440px;
+    max-width: 90%;
+    margin: 0 auto; }
 
-blockquote {
-  font-size: 1.3em;
-  border-left: 0.4em solid #C4C4C4;
-  padding-left: 1.2em;
-  margin: 1.5em 0; }
-
-hr {
-  border-top: 1px solid #C4C4C4; }
-
-strong {
-  font-weight: 700; }
-
-pre {
-  display: block;
-  font-family: monospace;
-  white-space: pre;
-  margin: 1em 0; }
-
-input, textarea {
-  font-size: 1em;
-  padding: 0.3em;
-  border: 1px solid #C4C4C4; }
-
-img {
-  display: block;
-  max-width: 100%;
-  margin: 2em auto; }
-
-.wrapper {
+#article_content {
   width: 700px;
   max-width: 90%;
   margin: 0 auto; }
-
-.content {
-  position: relative;
-  min-height: 100%;
-  margin: 2.813em 0 -2.063em 0; }
-
-.content:after {
-  content: "";
-  display: block; }
-
-footer, .content:after {
-  height: 2.063em; }
-
-header {
-  padding: 1.25em 0 2.5em 0;
-  border-bottom: 1px solid #C4C4C4; }
-  header #logo {
-    font-weight: 400;
+  #article_content a {
+    color: #D0021B;
+    text-decoration: none; }
+    #article_content a:hover {
+      color: #52010b; }
+    #article_content a:visited {
+      color: #D0021B; }
+  #article_content img {
+    display: block;
+    max-width: 100%;
+    margin: 2em auto; }
+  #article_content ul, #article_content ol {
+    margin-left: 1em; }
+  #article_content li {
+    font-size: 1.1em;
+    line-height: 1.3em; }
+  #article_content blockquote {
+    font-size: 1.3em;
+    border-left: 0.4em solid #C4C4C4;
+    padding-left: 1.2em;
+    margin: 1.5em 0; }
+  #article_content hr {
+    border-top: 1px solid #C4C4C4; }
+  #article_content strong {
+    font-weight: 700; }
+  #article_content pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0; }
+  #article_content input, #article_content textarea {
     font-size: 1em;
-    text-transform: uppercase;
-    letter-spacing: -0.035em;
-    margin: 0;
-    float: left;
+    padding: 0.3em;
+    border: 1px solid #C4C4C4; }
+
+.taglist .tag {
+  font-size: 0.6em;
+  text-decoration: none;
+  text-transform: lowercase;
+  color: #FFFFFF;
+  background-color: #9B9B9B;
+  padding: 0.5em 1em;
+  border-radius: 0.375em; }
+
+.pagination {
+  margin-top: 10em;
+  text-align: center; }
+  .pagination a {
     font-weight: 700;
-    color: #4A4A4A; }
-  header nav {
-    text-transform: uppercase;
-    font-size: 0.75em;
-    float: right;
-    margin-top: 0.5em; }
-    header nav a {
-      margin-left: 2em;
-      text-decoration: none;
-      color: #9B9B9B; }
-      header nav a:hover {
-        color: #D0021B; }
-      header nav a:visited {
-        color: #4A4A4A; }
-      header nav a:active {
-        text-decoration: underline;
-        color: #D0021B; }
+    color: #D0021B;
+    text-decoration: none; }
+    .pagination a:hover {
+      color: #52010b; }
+    .pagination a:visited {
+      color: #D0021B; }
 
 footer {
+  height: 60px;
   border-top: 0.063em solid #C4C4C4;
   background-color: #FFFFFF;
   margin-top: 5em;
@@ -579,44 +596,3 @@ footer {
     float: left; }
   footer #legal {
     float: right; }
-
-.taglist .tag {
-  font-size: 0.6em;
-  text-decoration: none;
-  text-transform: lowercase;
-  color: #FFFFFF;
-  background-color: #9B9B9B;
-  padding: 0.5em 1em;
-  border-radius: 0.375em; }
-
-.post {
-  text-align: center;
-  padding: 1.4065em 0; }
-  .post .post-date {
-    margin: 0; }
-  .post .post-title {
-    margin: 0.313em 0; }
-    .post .post-title a {
-      color: #4A4A4A; }
-      .post .post-title a:hover {
-        color: #9B9B9B; }
-
-.pagination {
-  margin-top: 10em;
-  text-align: center; }
-  .pagination a {
-    font-weight: 700; }
-
-.post-detail-header {
-  text-align: center;
-  margin: 100px 0; }
-  .post-detail-header h1 {
-    font-size: 3.250em;
-    margin-top: 0.133em; }
-  .post-detail-header h3 {
-    margin: 0px; }
-  .post-detail-header h4 {
-    margin: 12px 0; }
-
-.post-detail-content h1 {
-  margin: 32px 0 0 0; }

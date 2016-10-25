@@ -1,8 +1,8 @@
 {{#foreach posts}}
 
-<article class="post">
-  <h4 class="post-date" datetime="{{date format="MMMM D DD YYYY" }}">{{date format= "MMMM DD, YYYY"}}</h4>
-  <h1 class="post-title"><a href="{{url}}">{{title}}</a></h1>
+<article class="articles">
+  <h4 class="article-date" datetime="{{date format="MMMM D DD YYYY" }}">{{date format= "MMMM DD, YYYY"}}</h4>
+  <h1 class="article-title"><a href="{{url}}">{{title}}</a></h1>
   {{#if tags}}
   <span class="taglist">
       {{#foreach tags}}
