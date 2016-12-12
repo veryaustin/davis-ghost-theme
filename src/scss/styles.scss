@@ -37,8 +37,7 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.046875;
 }
 
 p {
@@ -52,24 +51,22 @@ p {
   border-bottom: 1px solid $light_grey;
   .logo {
     float: left;
-    text-transform: uppercase;
-    font-size: 1.15em;
+    font-size: 1.2em;
     font-weight: 700;
     letter-spacing: -0.035em;
     color: $dark_grey;
   }
   #main_nav {
     float: right;
-    font-size: 0.75em;
-    padding-top: 1.3em;
-    text-transform: uppercase;
+    font-size: 1em;
+    padding-top: 1em;
     a {
       color: $medium_grey;
-      text-decoration: none;
       margin-left: 1em;
+      text-decoration: none;
       &:hover {
-        color: darken($highlight, 25%);
         text-decoration: underline;
+        color: $dark_grey;
       }
       &:active {
         text-decoration: underline;
@@ -85,14 +82,14 @@ p {
 // ----- Article List ----- //
 
 .articles {
-  width: 700px;
+  width: 960px;
   max-width: 90%;
   margin: 3.5em auto;
   text-align: center;
   min-height: 100%;
   .article-date {
     font-family: 'Raleway', sans-serif;
-    text-transform: none;
+    // text-transform: none;
     font-size: 1.125em;
     margin: .3em 0;
   }
@@ -133,7 +130,7 @@ p {
 // ----- Article Detail Content ----- //
 
 #article_content {
-  width: 700px;
+  width: 960px;
   max-width: 90%;
   margin: 0 auto;
   a {

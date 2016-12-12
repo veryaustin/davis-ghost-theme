@@ -456,8 +456,7 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: -0.035em; }
+  letter-spacing: -0.046875; }
 
 p {
   line-height: 1.6em; }
@@ -467,23 +466,21 @@ p {
   border-bottom: 1px solid #C4C4C4; }
   #top_header .logo {
     float: left;
-    text-transform: uppercase;
-    font-size: 1.15em;
+    font-size: 1.2em;
     font-weight: 700;
     letter-spacing: -0.035em;
     color: #4A4A4A; }
   #top_header #main_nav {
     float: right;
-    font-size: 0.75em;
-    padding-top: 1.3em;
-    text-transform: uppercase; }
+    font-size: 1em;
+    padding-top: 1em; }
     #top_header #main_nav a {
       color: #9B9B9B;
-      text-decoration: none;
-      margin-left: 1em; }
+      margin-left: 1em;
+      text-decoration: none; }
       #top_header #main_nav a:hover {
-        color: #52010b;
-        text-decoration: underline; }
+        text-decoration: underline;
+        color: #4A4A4A; }
       #top_header #main_nav a:active {
         text-decoration: underline; }
 
@@ -491,14 +488,13 @@ p {
   display: none; }
 
 .articles {
-  width: 700px;
+  width: 960px;
   max-width: 90%;
   margin: 3.5em auto;
   text-align: center;
   min-height: 100%; }
   .articles .article-date {
     font-family: 'Raleway', sans-serif;
-    text-transform: none;
     font-size: 1.125em;
     margin: .3em 0; }
   .articles .article-title {
@@ -526,7 +522,7 @@ p {
     margin: 0 auto; }
 
 #article_content {
-  width: 700px;
+  width: 960px;
   max-width: 90%;
   margin: 0 auto; }
   #article_content a {
@@ -603,7 +599,6 @@ footer {
 @media only screen and (max-width: 768px) {
   #main_nav {
     display: none; }
-
   #main_nav.active {
     display: block;
     width: 100%; }
@@ -613,7 +608,6 @@ footer {
       border-bottom: 1px solid #C4C4C4; }
       #main_nav.active a:last-child {
         border-bottom: none; }
-
   .menu {
     display: block;
     float: right; }
@@ -621,12 +615,11 @@ footer {
       font-size: 1.5em;
       color: #4A4A4A;
       padding-top: .4em; } }
+
 @media only screen and (max-width: 320px) {
   h1 {
     font-size: 1.5em; }
-
   #banner h1 {
     font-size: 2.250em; }
-
   .articles {
     margin: 2.3em auto; } }
