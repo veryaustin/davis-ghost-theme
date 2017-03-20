@@ -547,7 +547,8 @@ p {
     padding-left: 1.2em;
     margin: 1.5em 0; }
   #article_content hr {
-    border-top: 1px solid #C4C4C4; }
+    border-top: 1px solid #C4C4C4;
+    margin: 20px 0; }
   #article_content strong {
     font-weight: 700; }
   #article_content pre {
