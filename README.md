@@ -1,4 +1,4 @@
-#Davis
+# Davis
 
 A simple, responsive, and open-source theme for the [Ghost](http://ghost.org) blogging platform by [Austin Lauritsen](http://veryaustin.com).
 
@@ -16,6 +16,8 @@ Enter your Google Analytics code to the Ghost Admin page under **"Code Injection
 * Thanks to the team at google that provides the amazing resource that is [Google Fonts](http://fonts.google.com)
 
 * Thanks to [@davegandy](https://twitter.com/davegandy) at [Font Awesome](http://fontawesome.io/) for the icons used in this theme.
+
+* Thanks to [Dave Rupert](http://daverupert.com/) / [@daveatron5000](http://twitter.com/daveatron5000) for [FitVids.js](http://fitvidsjs.com/) for responsive video embeds.
 
 * Thanks to Ivan Sagalaev, Jeremy Hull, Oleg Efimov and the many other [contributors](https://github.com/isagalaev/highlight.js/blob/master/AUTHORS.en.txt) to [highlight.js](http://highlightjs.org)
 

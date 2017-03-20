@@ -2,3 +2,4 @@ config.codekit
 config.codekit3
 .codekit-cache
 *.sass-cache
+.vscode

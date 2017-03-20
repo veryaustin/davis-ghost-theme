@@ -29,7 +29,10 @@
 
     {{ ghost_foot }}
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    {{!-- Highlight JS for code syntax highlighting --}}
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+    {{! FitVids for responsive Videos }}
+    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/main.js"}}"></script>
     <script> hljs.initHighlightingOnLoad();</script>
 
